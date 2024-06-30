@@ -9,8 +9,8 @@ public class UserService {
     private UserRepositoryInterface userRepository;
 
     @Autowired // 의존성 주입
-    public UserService(UserRepositoryInterface userRepositorySave) {
-        this.userRepository = userRepositorySave;
+    public UserService(UserRepositoryInterface userRepository2) {
+        this.userRepository = userRepository2;
     }
 
     public void createUser(User user) {
