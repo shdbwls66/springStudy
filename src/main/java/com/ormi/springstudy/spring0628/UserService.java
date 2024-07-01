@@ -1,14 +1,14 @@
-package com.ormi.springstudy;
+package com.ormi.springstudy.spring0628;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class UserService {
 
     private UserRepositoryInterface userRepository;
 
-    @Autowired // 의존성 주입
+//    @Autowired // 의존성 주입
     public UserService(UserRepositoryInterface userRepository2) {
         this.userRepository = userRepository2;
     }

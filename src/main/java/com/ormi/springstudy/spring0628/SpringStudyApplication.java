@@ -1,10 +1,10 @@
-package com.ormi.springstudy;
+package com.ormi.springstudy.spring0628;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class SpringStudyApplication {
 
     @Value("${kakao.api.key}")
@@ -24,7 +24,7 @@ public class SpringStudyApplication {
         System.out.println("=====================");
         System.out.println(singleton2);
 
-        SpringApplication.run(SpringStudyApplication.class, args);
+//        SpringApplication.run(SpringStudyApplication.class, args);
     }
 
 }

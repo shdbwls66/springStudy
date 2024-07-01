@@ -1,9 +1,9 @@
-package com.ormi.springstudy;
+package com.ormi.springstudy.spring0628;
 
 import org.springframework.stereotype.Repository;
 
-@Repository
-public class UserRepository implements UserRepositoryInterface {
+//@Repository
+public class UserRepository2 implements UserRepositoryInterface {
 
     @Override
     public void save(User user) {
