@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: springStudy
-kakao:
-  api:
-    key: 1234567890

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
-@SpringBootApplication
+//@SpringBootApplication
 //@Component
 //@ComponentScan(basePackages = "com.ormi.springstudy.spring0701")
 public class MainApplication {
