@@ -9,5 +9,4 @@ public interface StudentRepository {
     List<Student> findAll();
     List<String> selectListOfStudentName();
     int insertStudent(Student student);
-    int insertStudent(Map<String, Object> params);
 }

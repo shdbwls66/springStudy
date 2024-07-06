@@ -23,10 +23,6 @@ public class StudentService {
         return studentRepository.selectListOfStudentName();
     }
 
-    public void registStudent(Map<String, Object> params) {
-        studentRepository.insertStudent(params);
-    }
-
     public void registStudent(Student student) {
         studentRepository.insertStudent(student);
     }

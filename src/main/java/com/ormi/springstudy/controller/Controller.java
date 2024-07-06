@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-@RequestMapping(value="/student/regist2", method= {RequestMethod.POST})
-
+@RestController
 public class Controller {
 
     private final StudentService studentService;
@@ -26,15 +25,14 @@ public class Controller {
         return studentService.getListOfStudentName();
     }
 
-//    @GetMapping("/student/list")
-//    public List<Student> getListOfStudent() {
-//        return studentService.getListOfStudent();
-//    }
-//
-//    @PutMapping("/student/regist2")
-//    public void registStudent(@RequestBody Student student) {
-//        studentService.registStudent(student);
-//    }
+    @GetMapping("/student/list")
+    public List<Student> getListOfStudent() {
+        return studentService.getListOfStudent();
+    }
+    @PostMapping("/student/regist2")
+    public void registStudent(@RequestParam Student student) {
+        studentService.registStudent(student);
+    }
 
     /**
      * curl -X PUT "http://localhost:8080/student/regist" -d '{ "name":"김영수", "age":"28"}'
