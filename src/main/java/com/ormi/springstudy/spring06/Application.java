@@ -1,6 +1,5 @@
-package com.ormi.springstudy;
+package com.ormi.springstudy.spring06;
 
-import com.ormi.springstudy.spring0701.MainApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

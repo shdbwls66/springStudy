@@ -1,6 +1,7 @@
 package com.ormi.springstudy.repository;
 
-import com.ormi.springstudy.domain.Student;
+import com.ormi.springstudy.spring06.domain.Student;
+import com.ormi.springstudy.spring06.repository.StudentRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -1,12 +1,11 @@
-package com.ormi.springstudy.controller;
+package com.ormi.springstudy.spring06.controller;
 
-import com.ormi.springstudy.domain.Student;
-import com.ormi.springstudy.service.StudentService;
+import com.ormi.springstudy.spring06.domain.Student;
+import com.ormi.springstudy.spring06.service.StudentService;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
-import java.util.Map;
 
-@RestController
+//@RestController
 public class Controller {
 
     private final StudentService studentService;

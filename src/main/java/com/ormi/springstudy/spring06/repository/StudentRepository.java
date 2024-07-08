@@ -1,9 +1,7 @@
-package com.ormi.springstudy.repository;
+package com.ormi.springstudy.spring06.repository;
 
-import com.ormi.springstudy.domain.Student;
+import com.ormi.springstudy.spring06.domain.Student;
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 
 public interface StudentRepository {
     List<Student> findAll();

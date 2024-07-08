@@ -1,12 +1,11 @@
-package com.ormi.springstudy.repository;
+package com.ormi.springstudy.spring06.repository;
 
-import com.ormi.springstudy.domain.Student;
+import com.ormi.springstudy.spring06.domain.Student;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+//@Repository
 public class StudentJdbcTemplateRepository implements StudentRepository {
     private final JdbcTemplate jdbcTemplate;
 

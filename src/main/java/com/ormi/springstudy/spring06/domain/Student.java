@@ -1,4 +1,4 @@
-package com.ormi.springstudy.domain;
+package com.ormi.springstudy.spring06.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

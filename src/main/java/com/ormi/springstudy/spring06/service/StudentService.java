@@ -1,21 +1,18 @@
-package com.ormi.springstudy.service;
+package com.ormi.springstudy.spring06.service;
 
-import com.ormi.springstudy.domain.Student;
-import com.ormi.springstudy.repository.StudentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ormi.springstudy.spring06.domain.Student;
+import com.ormi.springstudy.spring06.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
-import java.util.Map;
 
 import java.util.List;
 
-@Service
+//@Service
 public class StudentService {
     //    @Autowired
 //    @Qualifier("studentNamedParameterJdbcRepository")
 //    private StudentRepository studentRepository;
 
-    @Autowired
+//    @Autowired
     @Qualifier("studentJdbcTemplateRepository")
     private StudentRepository studentRepository;
 
