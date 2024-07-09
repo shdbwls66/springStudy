@@ -5,11 +5,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+//@Service
 public class MyService {
     private final MyRepositoryInterface myRepository ;
 
-    @Autowired
+//    @Autowired
     public MyService(MyRepositoryInterface myRepository) {
         this.myRepository = myRepository;
     }
@@ -19,7 +19,7 @@ public class MyService {
     }
 
     public void insertUser(MyUser myUser) {
-        myRepository.save(myUser);
+//        myRepository.save(myUser);
     }
 
 

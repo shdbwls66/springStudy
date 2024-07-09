@@ -4,7 +4,7 @@ import com.ormi.springstudy.spring06.Application;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class MyApplication {
     public static void main(String[] args) {
 

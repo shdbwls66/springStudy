@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            gap: 30px;
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .div1{
+            display: flex;
+            padding: 30px 30px;
+            justify-content: space-around;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            list-style: none;
+        }
+        li{
+            color: white;
+            font-weight: bold;
+        }
+        .div2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        button{
+            border: none;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        span{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1 th:style="${background}">스프링부트 타임리프 홈페이지 테스트</h1>
+<p th:text="${message1}">메세지가 표시됩니다.</p>
+<article>
+    <h2>퀴즈</h2>
+    <p th:text="${message2}">메세지가 표시됩니다.</p>
+    <div class="div1" th:style="${background}">
+        <ul>
+            <li th:text="${message3}">퀴즈 문제입니다.</li>
+            <li th:text="${message4}">퀴즈 문제입니다.</li>
+            <li th:text="${message5}">퀴즈 문제입니다.</li>
+        </ul>
+        <div class="div2">
+            <button id="first">정답</button>
+            <span id="firstAns" th:text="${firstAns}">1번 정답</span>
+            <button id="second" >정답</button>
+            <span id="secondAns" th:text="${secondAns}">2번 정답</span>
+            <button id="third" >정답</button>
+            <span id="thirdAns" th:text="${thirdAns}">3번 정답</span>
+        </div>
+    </div>
+</article>
+
+</body>
+<script>
+    const firstAnsBtn = document.getElementById('first');
+    const secondAnsBtn = document.getElementById('second');
+    const thirdAnsBtn = document.getElementById('third');
+
+    const firstAns = document.getElementById('firstAns');
+    const secondAns = document.getElementById('secondAns');
+    const thirdAns = document.getElementById('thirdAns');
+
+    firstAnsBtn.onclick = function (){
+        firstAnsBtn.style.display = 'none';
+        firstAns.style.display = 'flex'
+
+    }
+    secondAnsBtn.onclick = function (){
+        secondAnsBtn.style.display = 'none';
+        secondAns.style.display = 'flex'
+
+    }
+    thirdAnsBtn.onclick = function (){
+        thirdAnsBtn.style.display = 'none';
+        thirdAns.style.display = 'flex'
+    }
+
+</script>
+</html>

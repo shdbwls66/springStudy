@@ -1,6 +1,4 @@
 package com.ormi.springstudy.spring0708.JPA;
-
-import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
