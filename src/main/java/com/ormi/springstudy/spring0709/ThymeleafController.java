@@ -3,12 +3,13 @@ package com.ormi.springstudy.spring0709;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class ThymeleafController {
 
     @GetMapping("/index")
-    public String index(Model model) {
+    public String index(@RequestParam(name = "name", required = false) String name, Model model) {
         model.addAttribute("message1", "스트링 부트와 타임리프 실습. message1 내용입니다!");
         model.addAttribute("message2", "안녕하세요");
         model.addAttribute("message3", "1번: 얼음이 죽으면?");
@@ -24,6 +25,15 @@ public class ThymeleafController {
         return "index";
     }
 
-
-
+//    @GetMapping("/index")
+//    public String index(@RequestParam("name") String name, Model model) {
+//        model.addAttribute("name1", name);
+//        return "index";
+//    }
 }
+
+
+
+
+
+

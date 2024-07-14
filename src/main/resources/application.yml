@@ -1,8 +1,7 @@
-#spring:
-#  application:
-#    name: springStudy
-
 spring:
+  application:
+    name: springStudy
+
   profiles:
     active: dev
 
