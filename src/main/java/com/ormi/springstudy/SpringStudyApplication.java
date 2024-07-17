@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = "com.ormi.springstudy.spring0715")
+@SpringBootApplication(scanBasePackages = "com.ormi.springstudy.spring0717")
 public class SpringStudyApplication {
 //    private int port;
 //    private String appName;
