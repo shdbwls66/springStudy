@@ -1,4 +1,4 @@
-package com.ormi.springstudy.restAPI;
+package com.ormi.springstudy.spring0716_RESTfulAPI;
 
 import org.springframework.web.bind.annotation.*;
 

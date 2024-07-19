@@ -1,4 +1,4 @@
-package com.ormi.springstudy.spring0717;
+package com.ormi.springstudy.spring0719;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
